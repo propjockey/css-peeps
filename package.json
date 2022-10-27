@@ -1,6 +1,6 @@
 {
   "name": "css-peeps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "One CSS File, One <div>, 5 Million Open Peeps Combinations | Infinite Customization",
   "main": "css-peeps.css",
   "scripts": {

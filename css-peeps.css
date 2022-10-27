@@ -2090,17 +2090,17 @@ css-peeps {
   1% { --peep-accessory-paint: initial; }
   2% { --peep-accessory-paint: initial; }
   3% { --peep-accessory-paint: initial; }
-  4% { --peep-accessory-paint: radial-gradient(192% 110% at 130% 96%, transparent 50%, var(--peep-accessory-color) 0 79%, transparent 0%)
-      calc(44% + var(--peep_a_o_x)) calc(33% + var(--peep_a_o_y)) / 14% 3% no-repeat,
+  4% { --peep-accessory-paint: radial-gradient(200% 109% at 130% 96%, transparent 62%, var(--peep-accessory-color) 0 80%, transparent 0%)
+      calc(46% + var(--peep_a_o_x)) calc(33% + var(--peep_a_o_y)) / 10% 3% no-repeat,
     radial-gradient(91% 80% at 48% 56%, transparent 40%, var(--peep-accessory-color) 0 53%, transparent 0%)
       calc(57% + var(--peep_a_o_x)) calc(33% + var(--peep_a_o_y)) / 10% 9% no-repeat,
     radial-gradient(91% 80% at 48% 51%, transparent 30%, var(--peep-accessory-color) 0 45%, transparent 0%)
       calc(68% + var(--peep_a_o_x)) calc(33% + var(--peep_a_o_y)) / 10% 9% no-repeat,
     linear-gradient(to right,
-      var(--peep-accessory-color) 12%, transparent 0% 47%,
-      var(--peep-accessory-color) 0% 62%, transparent 0% 87%,
+      var(--peep-accessory-color) 21%, transparent 0% 51%,
+      var(--peep-accessory-color) 0% 64%, transparent 0% 92%,
       var(--peep-accessory-color) 0%
-    ) calc(63% + var(--peep_a_o_x)) calc(32.75% + var(--peep_a_o_y)) / 20% 2.25% no-repeat,
+    ) calc(62% + var(--peep_a_o_x)) calc(32.75% + var(--peep_a_o_y)) / 23% 2.25% no-repeat,
     linear-gradient(var(--peep-accessory-color) 0% 100%)
       calc(70% + var(--peep_a_o_x)) calc(32% + var(--peep_a_o_y)) / 3% 2% no-repeat,; }
   5% { --peep-accessory-paint: initial; }
@@ -3167,14 +3167,16 @@ css-peeps {
       calc(76.3% + var(--peep_b_o_x)) calc(80% + var(--peep_b_o_y)) / 14% 12% no-repeat,
     linear-gradient(var(--peep-object-color) 28%, var(--peep-skin-color) 0px)
       calc(69% + var(--peep_b_o_x)) calc(72% + var(--peep_b_o_y)) / 7% 4% no-repeat,; }
-  11% { --peep-body-paint: var(--peep_shrug_paint); }
+  11% { --peep-body-paint: linear-gradient(var(--peep-skin-color) 0 100%)
+    calc(91% + var(--peep_b_o_x)) calc(97% + var(--peep_b_o_y)) / 83% 57% no-repeat,; }
   12% { --peep-body-paint: conic-gradient(from -48deg at 55%, var(--peep-skin-color) 100deg, transparent 60deg)
     calc(57% + var(--peep_b_o_x)) calc(59% + var(--peep_b_o_y)) / 13% 27% no-repeat,; }
   13% { --peep-body-paint: linear-gradient(310deg, transparent 25%, var(--peep-object-color) 0)
       calc(46% + var(--peep_b_o_x)) calc(55% + var(--peep_b_o_y)) / 5% 4% no-repeat,
     linear-gradient(110deg, transparent 7%, var(--peep-object-color) 0)
       calc(67% + var(--peep_b_o_x)) calc(72% + var(--peep_b_o_y)) / 18% 16% no-repeat,
-    var(--peep_shrug_paint); }
+    linear-gradient(var(--peep-skin-color) 0 100%)
+      calc(91% + var(--peep_b_o_x)) calc(97% + var(--peep_b_o_y)) / 83% 57% no-repeat,; }
   14% { --peep-body-paint: radial-gradient(100% 320% at 67% -107%, transparent 40%, var(--peep-skin-color) 0px)
       calc(73% + var(--peep_b_o_x)) calc(80% + var(--peep_b_o_y)) / 29% 15% no-repeat,
     linear-gradient(var(--peep-object-color) 0 100%)
@@ -3222,8 +3224,10 @@ css-peeps {
       calc(27% + var(--peep_b_o_x)) calc(97% + var(--peep_b_o_y)) / 11% 21% no-repeat,
     linear-gradient(-94deg, var(--peep-skin-color) 87%, transparent 0px)
       calc(79% + var(--peep_b_o_x)) calc(99% + var(--peep_b_o_y)) / 8% 21% no-repeat,; }
-  24% { --peep-body-paint: var(--peep_shrug_paint); }
-  25% { --peep-body-paint: var(--peep_shrug_paint); }
+  24% { --peep-body-paint: linear-gradient(var(--peep-skin-color) 0 100%)
+    calc(91% + var(--peep_b_o_x)) calc(97% + var(--peep_b_o_y)) / 83% 57% no-repeat,; }
+  25% { --peep-body-paint: linear-gradient(var(--peep-skin-color) 0 100%)
+    calc(91% + var(--peep_b_o_x)) calc(97% + var(--peep_b_o_y)) / 83% 57% no-repeat,; }
   26% { --peep-body-paint: radial-gradient(97% 100% at 54% -50%, var(--peep-skin-color) 90%, transparent 0px)
       calc(55% + var(--peep_b_o_x)) calc(72% + var(--peep_b_o_y)) / 20% 40% no-repeat,
     linear-gradient(var(--peep-skin-color) 99%, transparent 0px)
@@ -3353,6 +3357,26 @@ css-peeps {
 
 /* generated end */
 
+@property --peep-zoom { syntax: "<number>"; initial-value: 1; inherits: true; }
+@property --peep-rotate { syntax: "<angle>"; initial-value: 0deg; inherits: true; }
+@property --peep-accessory-offset-x { syntax: "<length>"; initial-value: 0px; inherits: true; }
+@property --peep-accessory-offset-y { syntax: "<length>"; initial-value: 0px; inherits: true; }
+@property --peep-facial-hair-offset-x { syntax: "<length>"; initial-value: 0px; inherits: true; }
+@property --peep-facial-hair-offset-y { syntax: "<length>"; initial-value: 0px; inherits: true; }
+@property --peep-face-offset-x { syntax: "<length>"; initial-value: 0px; inherits: true; }
+@property --peep-face-offset-y { syntax: "<length>"; initial-value: 0px; inherits: true; }
+@property --peep-head-offset-x { syntax: "<length>"; initial-value: 0px; inherits: true; }
+@property --peep-head-offset-y { syntax: "<length>"; initial-value: 0px; inherits: true; }
+@property --peep-body-offset-x { syntax: "<length>"; initial-value: 0px; inherits: true; }
+@property --peep-body-offset-y { syntax: "<length>"; initial-value: 0px; inherits: true; }
+@property --peep-hat-color { syntax: "<color>"; initial-value: #FC03C2; inherits: true; }
+@property --peep-hair-color { syntax: "<color>"; initial-value: #7300E6; inherits: true; }
+@property --peep-skin-color { syntax: "<color>"; initial-value: #87ceeb; inherits: true; }
+@property --peep-accessory-color { syntax: "<color>"; initial-value: #00ff00; inherits: true; }
+@property --peep-facial-hair-color { syntax: "<color>"; initial-value: #ffd700; inherits: true; }
+@property --peep-object-color { syntax: "<color>"; initial-value: #ffa500; inherits: true; }
+@property --peep-clothes-color { syntax: "<color>"; initial-value: #ff0000; inherits: true; }
+
 :where([data-css-peeps], .css-peeps) {
   position: relative;
   overflow: hidden;
@@ -3425,13 +3449,14 @@ css-peeps {
   /* transparent gif pixel */
   --peep_invisible: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
 
-  --peep-hat-color: #7300E6;
-  --peep-hair-color: #FC03C2;
-  --peep-skin-color: #7D567E;
-  --peep-accessory-color: #D3914E;
-  --peep-facial-hair-color: #FC03C2;
-  --peep-object-color: #FFFFFF;
-  --peep-clothes-color: #7300E6;
+  --peep-hat-color: #FC03C2;
+  --peep-hair-color: #7300E6;
+  --peep-skin-color: #87ceeb;
+  --peep-accessory-color: #00ff00;
+  --peep-facial-hair-color: #ffd700;
+  --peep-object-color: #ffa500;
+  --peep-clothes-color: #ff0000;
+  --peep-clothes-custom-paint: linear-gradient(var(--peep-clothes-color) 0 100%);
 }
 
 :where([data-css-peeps~="flipped"]) { --peep-flipped: 1; }
@@ -3457,7 +3482,7 @@ css-peeps {
 
     var(--peep_head_paint, )
     var(--peep_body_paint, )
-    var(--peep-clothes-color);
+    var(--peep-clothes-custom-paint);
 
   --peep_mask: var(--peep_accessory_mask, )
     var(--peep_facial_hair_mask, )
