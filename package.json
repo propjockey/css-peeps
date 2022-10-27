@@ -1,0 +1,25 @@
+{
+  "name": "css-peeps",
+  "version": "1.0.0",
+  "description": "One CSS File, One <div>, 5 Million Open Peeps Combinations | Infinite Customization",
+  "main": "css-peeps.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/propjockey/css-peeps.git"
+  },
+  "keywords": [
+    "CSS",
+    "Art",
+    "OpenPeeps",
+    "CSS-Peeps"
+  ],
+  "author": "Jane Ori",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/propjockey/css-peeps/issues"
+  },
+  "homepage": "https://github.com/propjockey/css-peeps#readme"
+}
